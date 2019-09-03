@@ -23,7 +23,7 @@
       </configuration>
     </facet>
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false">
+      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false" pureKotlinSourceFolders="$MODULE_DIR$/src/debug/kotlin;/Users/junek/Documents/SourceGitHub/Custom-ListView-android-Kotlin/app/src/debug/java;/Users/junek/Documents/SourceGitHub/Custom-ListView-android-Kotlin/app/src/release/kotlin;/Users/junek/Documents/SourceGitHub/Custom-ListView-android-Kotlin/app/src/release/java;/Users/junek/Documents/SourceGitHub/Custom-ListView-android-Kotlin/app/src/debugAndroidTest/kotlin;/Users/junek/Documents/SourceGitHub/Custom-ListView-android-Kotlin/app/src/debugUnitTest/kotlin;/Users/junek/Documents/SourceGitHub/Custom-ListView-android-Kotlin/app/src/releaseUnitTest/kotlin">
         <compilerSettings>
           <option name="additionalArguments" value="-Xallow-no-source-files" />
         </compilerSettings>
