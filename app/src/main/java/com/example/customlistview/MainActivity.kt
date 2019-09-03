@@ -2,6 +2,8 @@ package com.example.customlistview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -17,6 +19,12 @@ class MainActivity : AppCompatActivity() {
         val lm = LinearLayoutManager(this)
         mRecyclerView.layoutManager = lm
         mRecyclerView.setHasFixedSize(true)
+        mAdapter.itemClick = object: MainRvAdapter.ItemClick {
+            override fun onClick(view: View, position: Int) {
+                Toast.makeText(this@MainActivity, position.toString(), Toast.LENGTH_SHORT).show()
+
+            }
+        }
     }
 
     var fruitList = arrayListOf<Fruit>(

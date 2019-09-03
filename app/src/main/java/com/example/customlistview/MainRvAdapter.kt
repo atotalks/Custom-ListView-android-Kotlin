@@ -25,8 +25,17 @@ class MainRvAdapter(val context: Context, val fruitList: ArrayList<Fruit>):
     override fun onBindViewHolder(holder: Holder, position: Int) {
 
         holder?.bind(fruitList[position], context)
+        holder?.fruitPhoto?.setOnClickListener { v ->
+            itemClick?.onClick(v, position)
+        }
     }
 
+    interface ItemClick
+    {
+        fun onClick(view: View, position: Int)
+    }
+
+    var itemClick: ItemClick? = null
 
     inner class Holder(itemView: View?) : RecyclerView.ViewHolder(itemView!!) {
 
